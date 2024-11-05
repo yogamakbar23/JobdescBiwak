@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Support System</title>
+    <style>
+        /* Menggunakan font Garamond */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Garamond', serif;
+            text-align: center;
+            background: linear-gradient(135deg, #f0f4fd 0%, #dce5f5 100%);
+            overflow: hidden;
+        }
+        
+        /* Background geometris dengan bentuk lingkaran */
+        .background-design {
+            position: absolute;
+            width: 1200px;
+            height: 1200px;
+            background: radial-gradient(circle, rgba(0,122,204,0.15) 0%, rgba(0,122,204,0) 70%);
+            border-radius: 50%;
+            top: -300px;
+            left: -300px;
+            animation: rotateBackground 20s linear infinite;
+        }
+
+        /* Efek animasi rotasi lambat */
+        @keyframes rotateBackground {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin: 0.2em 0;
+            color: #333;
+            transition: color 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+        
+        h3 {
+            font-weight: normal;
+            color: #555;
+            transition: color 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+        
+        p {
+            font-size: 1.5em;
+            color: #777;
+            margin-top: 1em;
+            transition: color 0.3s, transform 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Efek interaktif saat di-hover */
+        h1:hover {
+            color: #007acc;
+        }
+        
+        h3:hover {
+            color: #005f99;
+        }
+        
+        p:hover {
+            color: #333;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemen untuk background geometris -->
+    <div class="background-design"></div>
+
+    <!-- Konten teks utama -->
+    <div>
+        <h1>Decision Support System untuk Analisis Kesesuaian Lahan Budidaya Ikan</h1>
+        <h3>by Rizki Ahmad F.</h3>
+        <p><br>Situs dalam Pengembangan</p>
+        <p>Coming Soon</p>
+    </div>
+</body>
+</html>
